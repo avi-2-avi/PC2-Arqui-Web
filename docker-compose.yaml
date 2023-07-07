@@ -1,0 +1,11 @@
+services:
+  db:
+    ports:
+      - 5432:5432
+    container_name: postgres_container
+    image: postgres
+    environment:
+      - POSTGRES_DB=datosPC2_db
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=pass
+    restart: always
